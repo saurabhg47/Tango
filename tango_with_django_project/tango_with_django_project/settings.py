@@ -56,7 +56,6 @@ WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 
 TEMPLATE_DIRS = (TEMPLATE_PATH,)
-# import pdb;pdb.set_trace()
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
@@ -89,6 +88,8 @@ STATIC_PATH = os.path.join(BASE_DIR, 'static')
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIR = (STATIC_PATH,)
-import pdb;pdb.set_trace()
+STATICFILES_DIRS = (STATIC_PATH,)
 
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

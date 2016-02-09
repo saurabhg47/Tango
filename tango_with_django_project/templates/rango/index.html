@@ -1,14 +1,18 @@
 <!DOCTYPE html>
+{% load staticfiles %} <!-- New line -->
 <html>
 
     <head>
         <title>Rango</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+        <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
     </head>
 
     <body>
         <h1>Rango Says....</h1>
         hello world! <strong>{{ boldmessage }}</strong><br />
         <a href="/rango/about" ></a><br />
+        <img src="{% static "images/rango.jpg" %}" alt="Picture of Rango" /> <!-- New Line -->
     </body>
 
 </html>
